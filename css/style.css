@@ -1,0 +1,84 @@
+/* font */
+@font-face {
+  font-family: 'BungeeRegular';
+  src: url(../font/Bungee-Regular.ttf);
+}
+/* font 2 */
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../font/Gilroy.otf);
+}
+/* fade animation for body */
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* body grid*/
+body{
+  display:grid;
+  grid-template-rows: auto auto auto; /* auto size 3 rows */
+  margin: 0;
+  background-color: rgb(35, 35, 41);
+  text-align: center;
+  color: white;
+  font-family: BungeeRegular;
+  animation: fade 1s;
+}
+
+/* header */
+.nav-container{
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: #333;
+}
+
+/* navigation bar */
+.nav-links-container{
+  display: grid;
+  width: 25%;
+  grid-template-columns: auto auto auto;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+}
+li a.navLinks{
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active){
+  background-color: #111;
+}
+
+/* big image thingy */
+.page{
+  grid-row-start: 2;
+  grid-row-end: 3;
+  position:relative;
+}
+
+.page h1{
+  position:absolute;
+  color: white;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin: 0;
+}
+
+/* part with the content */
+.content{
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+/* zoom transition */
+.zoom{
+  transition: transform .2s;
+}
+.zoom:hover{
+  transform: scale(1.3);
+}
