@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'RalewayLight';
+  src: url(../font/RalewayLight.ttf);
+}
+
+* {
+  font-family: RalewayLight;
+}
+
 .container{
   display: grid;
   grid-template-rows: auto auto auto auto;
