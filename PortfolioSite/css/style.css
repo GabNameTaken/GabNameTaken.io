@@ -1,0 +1,54 @@
+p{
+  white-space: pre-wrap;
+  text-align: justify;
+}
+.container{
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  padding: 10% 10% 0 10%;
+}
+
+.introContainer{
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+
+.email{
+  text-decoration: underline;
+  color: black;
+}
+
+.email:hover{
+  background-color: #39FF14;
+  color: whitesmoke;
+}
+
+.aboutMeContainer{
+  display: grid;
+  grid-template-columns: auto 70%;
+  text-align: center;
+}
+
+.showcaseContainer{
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+.aboutMeContainer .subjectHeader{
+  width: auto;
+}
+
+.showcaseContainer .subjectHeader{
+  grid-column-start: 2;
+  grid-column-end: 2; 
+}
+
+.subjectHeader{
+  width: fit-content;
+  padding: 0;
+}
+
+.project{
+  display: grid;
+  grid-template-rows: auto auto;  
+}
